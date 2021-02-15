@@ -22,9 +22,8 @@ on the element compared to just display: inline*/
     font-size: 48px;
 }
 
-/*used span tag to apply a different color in the "seo" part of "Horiseon" while 
-the remaining characters inherit the default h1 color. Not sure using .header h1 .seo is efficient vs. just .seo. Will test*/
-.header h1 .seo {
+/* replaced the original .header h1 .seo above with just .seo and achieved the same result*/
+.seo {
     color: #d9dcd6;
 }
 
@@ -66,6 +65,16 @@ p {
     background-position: center;
 }
 
+
+
+/* consoliated and organized all selectors and properites pertaining to content class here*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -76,13 +85,7 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/* moved all classes that are children of content class up there right below content class*/
+/* consoliated and organized all selectors and properites pertaining to search engine optimization*/
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -91,7 +94,15 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+.search-engine-optimization img {
+    max-height: 200px;
+}
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
 
+/* consoliated and organized all selectors and properites pertaining to online reputation management*/
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
@@ -100,7 +111,14 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
+.online-reputation-management img {
+    max-height: 200px;
+}
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/* consoliated and organized all selectors and properites pertaining to social media marketing*/
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
@@ -109,35 +127,15 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
 .social-media-marketing img {
     max-height: 200px;
 }
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-/*arranged all benefits sub classes like lead, brand and cost together so classes*/
+/* consoliated and organized all selectors and properites pertaining to benefits*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -148,6 +146,7 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
+/* consoliated and organized all selectors and properites pertaining to benefits lead*/
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -161,7 +160,7 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* consoliated and organized all selectors and properites pertaining to benefits brand*/
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
@@ -175,7 +174,7 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* consoliated and organized all selectors and properites pertaining` to benefits cost*/
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
@@ -189,6 +188,7 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
+
 .footer {
     padding: 30px;
     clear: both;
