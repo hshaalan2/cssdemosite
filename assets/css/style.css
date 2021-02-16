@@ -1,4 +1,4 @@
-/* Styling to all elements that don't have a more specific property and value */
+/* Styling to all elements that don't have a more specific selector  */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,8 +9,8 @@ body {
     background-color: #d9dcd6;
 }
 
-/*Top navigation bar */
-.header {
+/*Top navigation bar. Renamed "header" class to "headerclass" to avoid confusion with "header" element */
+.headerclass {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -19,7 +19,7 @@ body {
 
 /* using the display property value inline-block allows setting a width and height 
 on the element compared to just display: inline*/
-.header h1 {
+.headerclass h1 {
     display: inline-block;
     font-size: 48px;
 }
@@ -29,8 +29,8 @@ on the element compared to just display: inline*/
     color: #d9dcd6;
 }
 
-/*This is the header div */
-.header nav {
+/*This is the header div where the ul lives */
+.headerclass nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -39,11 +39,11 @@ on the element compared to just display: inline*/
 }
 
 /*Header navigational links */
-.header div ul {
+.headerclass div ul {
     list-style-type: none;
 }
 
-.header nav ul li {
+.headerclass nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -78,16 +78,19 @@ p {
     margin-left: 20px;
 }
 
+/*class used to define float properties of images */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/*class used to define float properties of images */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/*class used in all three divs in content section of page */
 .content-all {
     margin-bottom: 20px;
     padding: 50px;
@@ -97,10 +100,12 @@ p {
     color: #ffffff; 
 }
 
+/*class used with images in all three divs in content section of page*/
 .content img {
     max-height: 200px;
 }
 
+/*class used with h2 elements in all three divs in content section of page*/
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;   
@@ -119,11 +124,13 @@ p {
     background-color: #2589bd;
 }
 
+/*class used with images in all three divs in benefits section of page*/
 .benefits-all {
     margin-bottom: 32px;
     color: #ffffff;  
 }
 
+/*class used with h2 elements in all three divs in benefits section of page*/
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center; 
@@ -135,51 +142,7 @@ p {
     max-width: 150px;  
 }
 
-/*
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-*/
-
+/**/
 .footer {
     padding: 30px;
     clear: both;
