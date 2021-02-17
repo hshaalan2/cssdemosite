@@ -17,7 +17,7 @@ body {
     color: #ffffff;
 }
 
-/* using the display property value inline-block allows setting a width and height 
+/* Using the display property value inline-block allows setting a width and height 
 on the element compared to just display: inline*/
 .headerclass h1 {
     display: inline-block;
@@ -78,19 +78,19 @@ p {
     margin-left: 20px;
 }
 
-/*class used to define float properties of images */
+/*Class used to define float properties of images */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
-/*class used to define float properties of images */
+/*Class used to define float properties of images */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-/*class used in all three divs in content section of page */
+/*Class used in all three divs in content section of page */
 .content-all {
     margin-bottom: 20px;
     padding: 50px;
@@ -100,12 +100,12 @@ p {
     color: #ffffff; 
 }
 
-/*class used with images in all three divs in content section of page*/
+/*Class used with images in all three divs in content section of page*/
 .content img {
     max-height: 200px;
 }
 
-/*class used with h2 elements in all three divs in content section of page*/
+/*Class used with h2 elements in all three divs in content section of page*/
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;   
@@ -124,13 +124,13 @@ p {
     background-color: #2589bd;
 }
 
-/*class used with images in all three divs in benefits section of page*/
+/*Class used with images in all three divs in benefits section of page*/
 .benefits-all {
     margin-bottom: 32px;
     color: #ffffff;  
 }
 
-/*class used with h2 elements in all three divs in benefits section of page*/
+/*Class used with h2 elements in all three divs in benefits section of page*/
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center; 
@@ -142,7 +142,7 @@ p {
     max-width: 150px;  
 }
 
-/**/
+/*Footer section*/
 .footer {
     padding: 30px;
     clear: both;
